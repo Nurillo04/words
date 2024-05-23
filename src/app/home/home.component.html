@@ -3,6 +3,10 @@
   <button (click)="search(input.value)">Qidirish</button>
 
   <div class="words">
-    <word *ngFor="let w of filteredWords" [word]="w"></word>
+    <word
+      (click)="navigateToDetails()"
+      *ngFor="let w of filteredWords"
+      [word]="w"
+    ></word>
   </div>
 </main>

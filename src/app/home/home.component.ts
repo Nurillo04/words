@@ -20,4 +20,8 @@ export class HomeComponent {
       word.newWord.toLocaleLowerCase().includes(text.toLocaleLowerCase())
     );
   }
+
+  navigateToDetails() {
+    alert('Hi');
+  }
 }
