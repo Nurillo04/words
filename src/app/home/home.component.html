@@ -1,0 +1,8 @@
+<main>
+  <input type="text" placeholder="Izlash..." #input />
+  <button (click)="search(input.value)">Qidirish</button>
+
+  <div class="words">
+    <word *ngFor="let w of filteredWords" [word]="w"></word>
+  </div>
+</main>

@@ -1,0 +1,10 @@
+.word {
+  border: 1px solid #d4d2d2;
+  border-radius: 5px;
+  padding: 10px 8px;
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
