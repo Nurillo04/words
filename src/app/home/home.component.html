@@ -1,10 +1,10 @@
 <main>
-  <input type="text" placeholder="Izlash..." #input />
-  <button (click)="search(input.value)">Qidirish</button>
+  <input class="input" type="text" placeholder="Izlash..." #input />
+  <button class="btn" (click)="search(input.value)">Qidirish</button>
 
   <div class="words">
     <word
-      (click)="navigateToDetails()"
+      [routerLink]="['details', w.id]"
       *ngFor="let w of filteredWords"
       [word]="w"
     ></word>

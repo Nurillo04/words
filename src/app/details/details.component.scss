@@ -1,0 +1,40 @@
+.word {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  padding-top: 80px;
+
+  &__photo {
+    width: 400px;
+  }
+  &__details {
+    width: 600px;
+  }
+  &__newWord {
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  &__translation {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: grey;
+  }
+
+  &__exaple-title {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  &__example {
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 400;
+    font-style: normal;
+  }
+}

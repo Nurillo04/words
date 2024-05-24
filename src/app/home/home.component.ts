@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Word } from '../word';
 import { WordService } from '../word.service';
+import { Router } from '@angular/router';
 // import { Word } from '../word/word.component';
 
 @Component({
@@ -11,7 +12,7 @@ import { WordService } from '../word.service';
 export class HomeComponent {
   filteredWords!: Word[];
 
-  constructor(private wordService: WordService) {
+  constructor(private wordService: WordService, private router: Router) {
     this.filteredWords = this.wordService.words;
   }
 
@@ -21,7 +22,7 @@ export class HomeComponent {
     );
   }
 
-  navigateToDetails() {
-    alert('Hi');
-  }
+  // navigateToDetails() {
+  //   alert('Hi');
+  // }
 }

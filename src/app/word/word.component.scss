@@ -2,9 +2,38 @@
   border: 1px solid #d4d2d2;
   border-radius: 5px;
   padding: 10px 8px;
+  &__imgs {
+    text-align: center;
+  }
   img {
-    width: 200px;
+    width: 230px;
     height: 200px;
     object-fit: cover;
+    border-radius: 5px;
+  }
+  &__title5 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  &__title3 {
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  &__translation {
+    font-size: 22px;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  &__example {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 }

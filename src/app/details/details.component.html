@@ -1,1 +1,14 @@
-<p>details works!</p>
+<article class="word">
+  <img
+    [src]="word?.photo"
+    class="word__photo"
+    alt="Photo of {{ word?.newWord }}"
+  />
+  <section class="word__details">
+    <h2 class="word__newWord">{{ word?.newWord }}</h2>
+    <p class="word__translation">{{ word?.translation }}</p>
+
+    <h2 class="word__exaple-title">Misol gap</h2>
+    <p class="word__example">{{ word?.example }}</p>
+  </section>
+</article>

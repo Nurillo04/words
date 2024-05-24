@@ -1,8 +1,11 @@
 <div class="word">
-  <img class="word__book" [src]="word.photo" alt="rasm" />
-  <h5>{{ word.id }}</h5>
-  <h3>{{ word.newWord }}</h3>
-  <p class="translation"></p>
-  {{ word.translation }}
-  <p class="example">{{ word.example }}</p>
+  <div class="word__imgs">
+    <img class="word__book" [src]="word.photo" alt="rasm" />
+  </div>
+  <h5 class="word__title5">{{ word.id }}</h5>
+  <h3 class="word__title3">{{ word.newWord }}</h3>
+  <p class="word__translation">
+    {{ word.translation }}
+  </p>
+  <p class="word__example">{{ word.example }}</p>
 </div>
