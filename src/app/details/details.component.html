@@ -15,9 +15,16 @@
 
     <section class="leave-comment">
       <h2>Komentariya qoldirish</h2>
-      <form class="form">
+
+      <form class="form" [formGroup]="form">
         <label class="form__fio" for="name">FIO</label> <br />
-        <input class="form__name-input" type="text" id="name" name="name" />
+        <input
+          class="form__name-input"
+          type="text"
+          id="name"
+          name="name"
+          formControlName="name"
+        />
         <br />
 
         <label class="form__coment" for="coment">Comentariya</label> <br />
@@ -26,10 +33,13 @@
           type="text"
           id="coment"
           name="coment"
+          formControlName="comment"
         />
         <br />
 
-        <button class="form__btn" type="submit">Yuborish</button>
+        <button class="form__btn" (click)="send()" type="submit">
+          Yuborish
+        </button>
       </form>
     </section>
   </div>

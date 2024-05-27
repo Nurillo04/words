@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:mywords": "node dist/mywords/server/server.mjs"
+    "serve:ssr:mywords": "node dist/mywords/server/server.mjs",
+    "json-server": "json-server --watch db.json"
   },
   "private": true,
   "dependencies": {

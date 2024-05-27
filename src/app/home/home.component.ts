@@ -12,10 +12,21 @@ import { FormControl } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
   searchText = new FormControl('');
+
   filteredWords!: Word[];
 
+  words!: Word[];
+  /**
+   *
+   * @param wordService
+   * @param router
+   */
+
   constructor(private wordService: WordService, private router: Router) {
-    this.filteredWords = this.wordService.words;
+    this.wordService.getAllWords().then((words) => {
+      this.words = words;
+      this.filteredWords = words;
+    });
   }
   ngOnInit(): void {
     this.searchText.valueChanges.subscribe((a) => {
@@ -28,7 +39,7 @@ export class HomeComponent implements OnInit {
   }
 
   search(text: string) {
-    this.filteredWords = this.wordService.words.filter((word) =>
+    this.filteredWords = this.words.filter((word) =>
       word.newWord.toLocaleLowerCase().includes(text.toLocaleLowerCase())
     );
   }
