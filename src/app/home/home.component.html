@@ -1,6 +1,10 @@
 <main>
-  <input class="input" type="text" placeholder="Izlash..." #input />
-  <button class="btn" (click)="search(input.value)">Qidirish</button>
+  <input
+    class="input"
+    type="text"
+    [formControl]="searchText"
+    placeholder="Izlash..."
+  />
 
   <div class="words">
     <word

@@ -3,7 +3,7 @@
   justify-content: center;
   gap: 200px;
   align-items: center;
-  padding-top: 80px;
+  padding: 80px;
 
   &__photo {
     width: 400px;
@@ -36,5 +36,47 @@
     margin: 0px;
     font-weight: 400;
     font-style: normal;
+  }
+}
+.form {
+  &__fio {
+    margin-top: 30px;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  &__name-input {
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+  &__coment {
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  &__coment-input {
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    padding: 12px 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 5px;
+    border: 0px;
   }
 }

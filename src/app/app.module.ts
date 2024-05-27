@@ -10,10 +10,11 @@ import { WordComponent } from './word/word.component';
 import { HomeComponent } from './home/home.component';
 import { WordService } from './word.service';
 import { DetailsComponent } from './details/details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, WordComponent, HomeComponent, DetailsComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [WordService, provideClientHydration()],
   bootstrap: [AppComponent],
 })

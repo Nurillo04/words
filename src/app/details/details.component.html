@@ -4,11 +4,33 @@
     class="word__photo"
     alt="Photo of {{ word?.newWord }}"
   />
-  <section class="word__details">
-    <h2 class="word__newWord">{{ word?.newWord }}</h2>
-    <p class="word__translation">{{ word?.translation }}</p>
+  <div>
+    <section class="word__details">
+      <h2 class="word__newWord">{{ word?.newWord }}</h2>
+      <p class="word__translation">{{ word?.translation }}</p>
 
-    <h2 class="word__exaple-title">Misol gap</h2>
-    <p class="word__example">{{ word?.example }}</p>
-  </section>
+      <h2 class="word__exaple-title">Misol gap</h2>
+      <p class="word__example">{{ word?.example }}</p>
+    </section>
+
+    <section class="leave-comment">
+      <h2>Komentariya qoldirish</h2>
+      <form class="form">
+        <label class="form__fio" for="name">FIO</label> <br />
+        <input class="form__name-input" type="text" id="name" name="name" />
+        <br />
+
+        <label class="form__coment" for="coment">Comentariya</label> <br />
+        <input
+          class="form__coment-input"
+          type="text"
+          id="coment"
+          name="coment"
+        />
+        <br />
+
+        <button class="form__btn" type="submit">Yuborish</button>
+      </form>
+    </section>
+  </div>
 </article>
